@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        nav img:hover {
+            transform: scale(1.2);
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 10px;
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            transition: filter 0.3s ease;
+        }
+
+        .grid-item:hover img {
+            filter: brightness(70%);
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .grid-item:hover .overlay-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<img src="Z.png" alt="Header Photo" style="width: 100%; height: auto;"></header>
+
+<nav>
+    <a href="#music"><img src="Orange Pink & Blue Rainbow Retro Music Playlist Quote Instagram Post.png" alt="Music"></a>
+    <a href="#books"><img src="Colorful Funny 80s Deco Geometric Quote Instagram Post.png" alt="Books"></a>
+    <a href="#favorites"><img src="Purple Orange Bold Gradient Aesthetic Quote Instagram Post.png" alt="Favorites"></a>
+    <a href="#social"><img src="Colorful Gradient Noise 80s Deco Motivational Quote Instagram Story.jpg" alt="Social"></a>
+    <a href="#uni"><img src="zzz.png" alt="Uni"></a>
+    <a href="#hobbies"><img src="Colorful 80s Deco Gradient Funny We Are Hiring Instagram Post.png" alt="Hobbies"></a>
+</nav>
+
+<section id="music">
+    <h2>Music - Spotify Top Albums</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/3mH6qwIy9crq0I9YQbOuDf?si=xw190WcAToid5X4Yp9KW7w" target="_blank">
+                <img src="1m.jpg" alt="Album 1">
+                <div class="overlay-text">Blonde - Frank Ocean</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/5Co3CGD9lBQVNnn7q0px1g?si=LMnq-b9pTiSlyEd-VVa86g" target="_blank">
+                <img src="m2.jpg" alt="Album 2">
+                <div class="overlay-text">The Melodic Blue (Deluxe) - Baby Keem</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/7zCODUHkfuRxsUjtuzNqbd?si=mZdVIqyHTCK-SgySN4MyBA" target="_blank">
+                <img src="m3.jpg" alt="Album 3">
+                <div class="overlay-text">House Of Balloons (Original) - The Weeknd</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/1To7kv722A8SpZF789MZy7?si=OR3SV2PdQ_mcVP39hN0cfg" target="_blank">
+                <img src="m4.jpg" alt="Album 4">
+                <div class="overlay-text">MTV Unplugged in New York - Nirvana</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/44zQnmrFcPCmPp6NLMfTuz?si=rFPh41qkRzGj1F59v3fJXQ" target="_blank">
+                <img src="m5.jpg" alt="Album 5">
+                <div class="overlay-text">Hozier (Special Edition) - Hozier</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/5IjSLZhlg0qVq62r2PSfM1?si=FAxdlpo2TKytXUhz8I5GyA" target="_blank">
+                <img src="m6.jpg" alt="Album 6">
+                <div class="overlay-text">Born To Die (Deluxe Version) - Lana Del Rey</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk?si=t-DfzLS0T4ie_3Jv3hAaiw" target="_blank">
+                <img src="m7.jpg" alt="Album 7">
+                <div class="overlay-text">Swimming - Mac Miller</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/1KerGJUScYGffP3Mjmjz8c?si=sWRJFiejSBmkAXyYpO3M6Q" target="_blank">
+                <img src="m8.jpg" alt="Album 8">
+                <div class="overlay-text">K-12 - Melanie Martinez</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE?si=KnY24lqQTsGykb1aYMID3Q" target="_blank">
+                <img src="m9.jpg" alt="Album 9">
+                <div class="overlay-text">IGOR - Tyler, The Creator</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section id="books">
+    <style>
+        #books {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #books .grid-container2 {
+            display: inline-block;
+            animation: scroll 45s linear infinite; /* Adjust duration as needed */
+        }
+
+        #books .grid-item {
+            display: inline-block;
+            margin-right: 10px; /* Adjust as needed for spacing between items */
+            vertical-align: top; /* Align items from the top */
+        }
+
+        #books .grid-item img {
+            width: 100px; /* Set the width based on the smallest image dimension */
+            height: auto; /* Maintain aspect ratio */
+        }
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%); /* Adjust as needed */
+    }
+}
+    </style>
+
+    <h2>Goodreads My Top Books</h2>
+    <div class="grid-container2">
+        <div class="grid-item">
+            <img src="1.jpg" alt="Book 1">
+        </div>
+        <div class="grid-item">
+            <img src="2.jpg" alt="Book 2">
+        </div>
+        <div class="grid-item">
+            <img src="3.jpeg" alt="Book 3">
+        </div>
+        <div class="grid-item">
+            <img src="4.jpg" alt="Book 4">
+        </div>
+        <div class="grid-item">
+            <img src="5.jpg" alt="Book 5">
+        </div>
+        <div class="grid-item">
+            <img src="6.jpg" alt="Book 6">
+        </div>
+        <div class="grid-item">
+            <img src="7.jpg" alt="Book 7">
+        </div>
+        <div class="grid-item">
+            <img src="8.jpg" alt="Book 8">
+        </div>
+        <div class="grid-item">
+            <img src="9.jpg" alt="Book 9">
+        </div>
+        <div class="grid-item">
+            <img src="1.jpg" alt="Book 1">
+        </div>
+        <div class="grid-item">
+            <img src="2.jpg" alt="Book 2">
+        </div>
+        <div class="grid-item">
+            <img src="3.jpeg" alt="Book 3">
+        </div>
+        <div class="grid-item">
+            <img src="4.jpg" alt="Book 4">
+        </div>
+        <div class="grid-item">
+            <img src="5.jpg" alt="Book 5">
+        </div>
+        <div class="grid-item">
+            <img src="6.jpg" alt="Book 6">
+        </div>
+        <div class="grid-item">
+            <img src="7.jpg" alt="Book 7">
+        </div>
+        <div class="grid-item">
+            <img src="8.jpg" alt="Book 8">
+        </div>
+        <div class="grid-item">
+            <img src="9.jpg" alt="Book 9">
+        </div>
+        <div class="grid-item">
+            <img src="1.jpg" alt="Book 1">
+        </div>
+        <div class="grid-item">
+            <img src="2.jpg" alt="Book 2">
+        </div>
+        <div class="grid-item">
+            <img src="3.jpeg" alt="Book 3">
+        </div>
+        <div class="grid-item">
+            <img src="4.jpg" alt="Book 4">
+        </div>
+        <div class="grid-item">
+            <img src="5.jpg" alt="Book 5">
+        </div>
+        <div class="grid-item">
+            <img src="6.jpg" alt="Book 6">
+        </div>
+        <div class="grid-item">
+            <img src="7.jpg" alt="Book 7">
+        </div>
+        <div class="grid-item">
+            <img src="8.jpg" alt="Book 8">
+        </div>
+        <div class="grid-item">
+            <img src="9.jpg" alt="Book 9">
+        </div>
+    </div>
+</section>
+
+
+<section id="favorites" style="text-align: center; display: flex; flex-direction: row; height: auto;">
+    <div style="flex: 1; text-align: center;">
+        <h2>Movies</h2>
+        <div class="frame" id="movie-frame" style="width: 800px; height: 1200px; border: 1px solid #ccc; overflow: hidden; margin: 10px;">
+            <img src="" alt="Movie Poster" style="width: 100%; height: auto; object-fit: cover; display: block;">
+        </div>
+    </div>
+
+    <div style="flex: 1; text-align: center;">
+        <h2>Shows</h2>
+        <div class="frame" id="tv-frame" style="width: 800px; height: 1200px; border: 1px solid #ccc; overflow: hidden; margin: 10px;">
+            <img src="" alt="TV Show Poster" style="width: 100%; height: auto; object-fit: cover; display: block;">
+        </div>
+    </div>
+</section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const moviePosters = [
+                'Filz1.jpg',
+                'Filz2.jpg',
+                'Filz3.jpg',
+                'Filz4.jpg',
+                'Filz5.jpg',
+                'Filz6.jpg',
+                'Filz7.jpg',
+                'Filz8.jpg',
+                'Filz9.jpg',
+                // Add more poster URLs as needed
+            ];
+
+            const tvShows = [
+                'File 1.jpg',
+                'File 2.jpeg',
+                'File 3.png',
+                'File 4.jpg',
+                'File 5.jpg',
+                'File 6.jpg',
+                'File 7.jpg',
+                'File 8.jpg',
+                'File 9.jpg',
+                // Add more show URLs as needed
+            ];
+
+            function switchImages(frame, images) {
+                let currentIndex = 0;
+                const imgElement = frame.querySelector('img');
+
+                function updateImage() {
+                    imgElement.src = images[currentIndex];
+                    currentIndex = (currentIndex + 1) % images.length;
+                }
+
+                updateImage();
+                setInterval(updateImage, 3000); // Switch every 3 seconds (adjust as needed)
+            }
+
+            const movieFrame = document.getElementById('movie-frame');
+            const tvFrame = document.getElementById('tv-frame');
+
+            switchImages(movieFrame, moviePosters);
+            switchImages(tvFrame, tvShows);
+        });
+    </script>
+</section>
+
+<section id="social">
+    <h2>Social Life</h2>
+    <style>
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%; /* Ensure each image fills its grid item */
+}
+
+.grid-item:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+
+<div class="grid-container">
+  <!-- Add 12 images here -->
+  <img class="grid-item" src="z8.JPEG" alt="Image 1">
+  <img class="grid-item" src="z2.HEIC" alt="Image 2">
+  <img class="grid-item" src="z3.HEIC" alt="Image 3">
+  <img class="grid-item" src="z4.HEIC" alt="Image 4">
+  <img class="grid-item" src="z5.HEIC" alt="Image 5">
+  <img class="grid-item" src="z7.JPEG" alt="Image 6">
+  <img class="grid-item" src="z9.JPEG" alt="Image 7">
+  <img class="grid-item" src="z10.JPEG" alt="Image 8">
+  <img class="grid-item" src="z12.JPG" alt="Image 9">
+  <img class="grid-item" src="z1.HEIC" alt="Image 10">
+  <img class="grid-item" src="z6.HEIC" alt="Image 11">
+  <img class="grid-item" src="z12.HEIC" alt="Image 12">
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var images = document.getElementsByClassName("grid-item");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i = 0; i < images.length; i++) {
+  images[i].onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+</section>
+
+
+<section id="uni">
+    <h2>American University of Madaba</h2>
+    <style>
+
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+        
+        .grid-item {
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+          width: 100%; /* Ensure each image fills its grid item */
+        }
+        
+        .grid-item:hover {opacity: 0.7;}
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+        
+        /* Modal Content (image) */
+        .modal-content {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+        }
+        
+        /* Caption of Modal Image */
+        #caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          color: #ccc;
+          padding: 10px 0;
+          height: 150px;
+        }
+        
+        /* Add Animation */
+        .modal-content, #caption {  
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+        
+        @-webkit-keyframes zoom {
+          from {-webkit-transform:scale(0)} 
+          to {-webkit-transform:scale(1)}
+        }
+        
+        @keyframes zoom {
+          from {transform:scale(0)} 
+          to {transform:scale(1)}
+        }
+        
+        /* The Close Button */
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+          .modal-content {
+            width: 100%;
+          }
+        }
+        </style>
+        
+        <div class="grid-container">
+          <!-- Add 12 images here -->
+          <img class="grid-item" src="x1.JPEG" alt="Image 1">
+          <img class="grid-item" src="x6.JPG" alt="Image 2">
+          <img class="grid-item" src="x2.jpg" alt="Image 3">
+          <img class="grid-item" src="x3.HEIC" alt="Image 4">
+          <img class="grid-item" src="x4.HEIC" alt="Image 5">
+          <img class="grid-item" src="x5.HEIC" alt="Image 6">
+          <img class="grid-item" src="x7.HEIC" alt="Image 7">
+          <img class="grid-item" src="x9.HEIC" alt="Image 8">
+          <img class="grid-item" src="x10.HEIC" alt="Image 9">
+          <img class="grid-item" src="x12.JPEG" alt="Image 10">
+          <img class="grid-item" src="x11.HEIC" alt="Image 11">
+          <img class="grid-item" src="x8.HEIC" alt="Image 12">
+
+        </div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var images = document.getElementsByClassName("grid-item");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        
+        for (var i = 0; i < images.length; i++) {
+          images[i].onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+        
+</section>
+
+<section id="hobbies">
+    <style>
+        #pages {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #pages .grid-container2 {
+            display: inline-block;
+            animation: scroll 300s linear infinite; /* Adjust duration as needed */
+        }
+
+        #pages .grid-item {
+            display: inline-block;
+            margin-right: 10px; /* Adjust as needed for spacing between items */
+            vertical-align: top; /* Align items from the top */
+        }
+
+        #pages .grid-item img {
+            width: 1000px; /* Set the width based on the smallest image dimension */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+    <section id="pages">
+        <h2>Cracks of Frozen Blue</h2>
+        <div class="grid-container2" id="gridContainer"></div>
+
+        <script>
+            // Array of page images
+            const pageImages =  [
+        "Cracks of Frozen Blue.jpg",
+        "Cracks of Frozen Blue-2.jpg",
+        "Cracks of Frozen Blue-3.jpg",
+        "Cracks of Frozen Blue-4.jpg",
+        "Cracks of Frozen Blue-5.jpg",
+        "Cracks of Frozen Blue-6.jpg",
+        "Cracks of Frozen Blue-7.jpg",
+        "Cracks of Frozen Blue-8.jpg",
+        "Cracks of Frozen Blue-9.jpg",
+        "Cracks of Frozen Blue-10.jpg",
+        "Cracks of Frozen Blue-11.jpg",
+        "Cracks of Frozen Blue-12.jpg",
+        "Cracks of Frozen Blue-13.jpg",
+        "Cracks of Frozen Blue-14.jpg",
+        "Cracks of Frozen Blue-15.jpg",
+        "Cracks of Frozen Blue-16.jpg",
+        "Cracks of Frozen Blue-17.jpg",
+        "Cracks of Frozen Blue-18.jpg",
+        "Cracks of Frozen Blue-19.jpg",
+        "Cracks of Frozen Blue-20.jpg",
+        "Cracks of Frozen Blue-21.jpg",
+        "Cracks of Frozen Blue-22.jpg",
+        "Cracks of Frozen Blue-23.jpg",
+        "Cracks of Frozen Blue-24.jpg",
+        "Cracks of Frozen Blue-25.jpg",
+        "Cracks of Frozen Blue-26.jpg",
+        "Cracks of Frozen Blue-27.jpg",
+        "Cracks of Frozen Blue-28.jpg",
+        "Cracks of Frozen Blue-29.jpg",
+        "Cracks of Frozen Blue-30.jpg",
+        "Cracks of Frozen Blue-31.jpg",
+        "Cracks of Frozen Blue-32.jpg",
+        "Cracks of Frozen Blue-33.jpg",
+        "Cracks of Frozen Blue-34.jpg",
+        "Cracks of Frozen Blue-35.jpg",
+        "Cracks of Frozen Blue-36.jpg",
+        "Cracks of Frozen Blue-37.jpg",
+        "Cracks of Frozen Blue-38.jpg",
+        "Cracks of Frozen Blue-39.jpg",
+        "Cracks of Frozen Blue-40.jpg",
+        "Cracks of Frozen Blue-41.jpg",
+        "Cracks of Frozen Blue-42.jpg",
+        "Cracks of Frozen Blue-43.jpg",
+        "Cracks of Frozen Blue-44.jpg",
+        "Cracks of Frozen Blue-45.jpg",
+        "Cracks of Frozen Blue-46.jpg",
+        "Cracks of Frozen Blue-47.jpg"
+    ];
+    function createGridItems(images) {
+        const gridContainer = document.getElementById('gridContainer');
+        const pagesContainer = document.getElementById('pages');
+
+        images.forEach((image, index) => {
+            const gridItem = document.createElement('div');
+            gridItem.classList.add('grid-item');
+
+            const img = document.createElement('img');
+            img.src = image;
+            img.alt = `Page ${index + 1}`;
+            img.classList.add('clickable');
+
+            // Add click event listener to each image
+            img.addEventListener('click', () => {
+                pauseAnimation(pagesContainer);
+            });
+
+            gridItem.appendChild(img);
+            gridContainer.appendChild(gridItem);
+        });
+    }
+
+    function pauseAnimation(container) {
+        const gridContainer = container.querySelector('.grid-container2');
+        const animationState = window.getComputedStyle(gridContainer).getPropertyValue('animation-play-state');
+
+        // Toggle animation play state
+        gridContainer.style.animationPlayState = (animationState === 'paused') ? 'running' : 'paused';
+    }
+
+    // Call the function with the array of page images
+    createGridItems(pageImages);
+        </script>
+    </section>
+</section>
+
+</body>
+</html>
